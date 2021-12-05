@@ -1,1 +1,1 @@
-# Buildspace Web2-NFT project
+# Buildspace Web3-NFT project
