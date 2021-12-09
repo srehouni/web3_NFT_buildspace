@@ -17,7 +17,7 @@ contract MyEpicNFT is ERC721URIStorage {
 
     string[] firstWords = ["ETH", "BTC", "SOL", "DODGE", "BNB", "UNI"];
 
-    constructor() ERC721 ("EjemploNFT", "EJM") {
+    constructor() ERC721 ("SaidRehouniNFT", "SRE") {
         console.log("This is my NFT contract. Woah!");
     }
 
@@ -68,6 +68,18 @@ contract MyEpicNFT is ERC721URIStorage {
 
         console.log("\n--------------------");
         console.log(finalTokenUri);
+        console.log("--------------------\n");
+
+        console.log("\n--------------------");
+        console.log(
+            string(
+                abi.encodePacked(
+                    "https://nftpreview.0xdev.codes/?code=",
+                    finalTokenUri
+                )
+            )
+        );
+        
         console.log("--------------------\n");
 
         _safeMint(msg.sender, newItemId);
